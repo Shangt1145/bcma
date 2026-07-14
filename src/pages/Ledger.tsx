@@ -9,7 +9,7 @@ function Ledger() {
           <div className="org-name">BCMA · 后勤部物资调拨与消耗登记</div>
           <div className="doc-meta">
             <span>登记编号: HQ-LOG-2024-0317</span>
-            <span>登记周期: 2024年3月 — 2024年5月</span>
+            <span>登记周期: 2075年3月 — 2075年5月</span>
             <span>登记员: 王██</span>
             <span>核签: 陈██</span>
           </div>
