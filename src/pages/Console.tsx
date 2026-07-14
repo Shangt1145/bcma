@@ -1,0 +1,87 @@
+import { useState, type KeyboardEvent } from 'react'
+import './Console.css'
+
+function Console() {
+  const [input, setInput] = useState('')
+  const [output, setOutput] = useState<string[]>([
+    'BCMA Integrated Management System v3.7.1',
+    'Connection established: CENTRAL-HUB-01',
+    'Session ID: SESS-7742-0317',
+    '',
+    'Available modules:',
+    '  [1] 系统状态   [2] 档案查询   [3] 研究日志',
+    '  [4] 通讯记录   [5] 人员目录   [6] 资产管理',
+    '',
+    '输入模块编号或命令。输入 "help" 查看可用命令。',
+    '',
+  ])
+
+  const handleCommand = (cmd: string) => {
+    const trimmed = cmd.trim().toLowerCase()
+    setOutput(prev => [...prev, `> ${cmd}`])
+
+    switch (trimmed) {
+      case 'help':
+        setOutput(prev => [...prev, '', '可用命令:', '  help     - 显示此帮助信息', '  1        - 系统状态', '  2        - 档案查询', '  3        - 研究日志', '  4        - 通讯记录', '  clear    - 清屏', ''])
+        break
+      case '1':
+        setOutput(prev => [...prev, '', '═══════════════════════════════════════', '  系统状态', '═══════════════════════════════════════', '', '核心枢纽:    在线', '观测站网络:  在线 (12/14)', '回声分析中心: 在线', '外部通讯:    受限', '', '系统运行时间: 2174天14小时', '最后维护:    2024/05/15 03:42', ''])
+        break
+      case '2':
+        setOutput(prev => [...prev, '', '═══════════════════════════════════════', '  档案查询', '═══════════════════════════════════════', '', '输入档案编号查询。', '已知档案: RPT-3187, RPT-4502, LOG-0317', '', '提示: 部分档案需要授权码。', ''])
+        break
+      case 'rpt-3187':
+        setOutput(prev => [...prev, '', '档案 RPT-3187 [已解密]', '──────────────────────────────────', '标题: 跨维信息泄露初步评估', '日期: 2024/03/17', '作者: 林██', '', '摘要: 回声分析中心在例行信号扫描中，', '在第7号观测站覆盖范围内检测到异常信号模式。', '经分析，信号携带结构化数据，数据格式与', '目标世界互联网协议高度吻合。', '', '这意味着两个维度之间的信息壁垒正在以比', '预期更快的速度瓦解。', '', '附件: [需要授权码]', ''])
+        break
+      case 'rpt-4502':
+        setOutput(prev => [...prev, '', '档案 RPT-4502 [已解密]', '──────────────────────────────────', '标题: 第7号观测站异常活动报告', '日期: 2024/04/15', '作者: 陈██', '', '摘要: 第7号观测站附近建筑结构在过去两周内', '出现不明原因的物理变化。墙体表面呈现出目标世界', '互联网页面的视觉残留。', '', '初步判断为克伦威尔极限以下的事件，', '但频率正在增加。', '', '建议: 提高观测站级别至 ALPHA-3。', ''])
+        break
+      case '3':
+        setOutput(prev => [...prev, '', '═══════════════════════════════════════', '  研究日志', '═══════════════════════════════════════', '', '[2024/03/20] 跨维信息渗透测试 α-7', '目标世界互联网中发现多个与BCMA基础设施', '相对应的通信端点。初步测试已完成。', '', '测试文件已上传至目标世界网盘。', '端点编码: [AES-256 加密]', '测试签名: ECH0-T3ST-077', '', '─── 以下为系统自动记录 ───', '上传位置: aHR0cHM6Ly9wYW4ucXVhcmsuY24vcy9iY21hLXRlc3Q=', '状态: 等待对方世界响应', '─── 记录结束 ───', '', '⚠ 警告: 测试文件包含主动频谱信号。', '仅限授权人员访问。', ''])
+        break
+      case '4':
+        setOutput(prev => [...prev, '', '═══════════════════════════════════════', '  通讯记录', '═══════════════════════════════════════', '', '[访问受限]', '此模块需要 2级或以上安全许可。', '', '请联络系统管理员获取访问权限。', ''])
+        break
+      case 'clear':
+        setOutput([])
+        break
+      default:
+        setOutput(prev => [...prev, `未知命令: ${trimmed}`, '输入 "help" 查看可用命令。', ''])
+    }
+    setInput('')
+  }
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleCommand(input)
+    }
+  }
+
+  return (
+    <div className="console-container">
+      <div className="console-screen">
+        <div className="console-output">
+          {output.map((line, i) => (
+            <div key={i} className="console-line">
+              {line || '\u00A0'}
+            </div>
+          ))}
+        </div>
+        <div className="console-input-line">
+          <span className="console-prompt">{'>'}</span>
+          <input
+            className="console-input"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
+            autoFocus
+            spellCheck={false}
+          />
+          <span className="console-cursor" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Console
