@@ -116,7 +116,6 @@ function Ledger() {
               <td>台</td>
               <td>研发部</td>
               <td>中央枢纽</td>
-              <td className="annotation">← 实验品，为何直调中枢？</td>
             </tr>
             <tr>
               <td>009</td>
