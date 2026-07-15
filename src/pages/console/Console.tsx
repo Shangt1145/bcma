@@ -18,7 +18,7 @@ function Console() {
           <NavLink to="/console" end className="nav-link">仪表盘</NavLink>
           <NavLink to="/console/terminal" className="nav-link">终端</NavLink>
           <NavLink to="/console/archives" className="nav-link">档案库</NavLink>
-          <NavLink to="/console/discovery" className="nav-link">异常发现</NavLink>
+
           <div className="nav-sep" />
           <div className="nav-link disabled">通讯中心</div>
           <div className="nav-link disabled">人员管理</div>
