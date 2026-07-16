@@ -9,7 +9,7 @@ import Archives from './pages/console/Archives'
 import EmailTranscript from './pages/console/EmailTranscript'
 import Personnel from './pages/console/Personnel'
 import AssetManagement from './pages/console/AssetManagement'
-
+import Official from './pages/Official'
 function AppRoutes() {
   const navigate = useNavigate()
 
@@ -27,6 +27,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Ledger />} />
+      <Route path="/official" element={<Official />} />
       <Route path="/console" element={<Console />}>
         <Route index element={<Dashboard />} />
         <Route path="terminal" element={<Terminal />} />
