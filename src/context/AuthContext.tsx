@@ -14,7 +14,7 @@ interface AuthState {
 
 const ACCOUNTS: Record<string, { password: string; level: number; name: string }> = {
   'lin.yan': { password: 'ECH0-T3ST-077', level: 3, name: '林██' },
-  'sys.admin': { password: 'REPLACE_ME', level: 5, name: '系统管理员' },
+  'sys.admin': { password: 'NODE-7742-ECH0', level: 5, name: '系统管理员' },
 }
 
 const AuthContext = createContext<AuthState | null>(null)
