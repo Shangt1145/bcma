@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技与装备 — SWX 百科</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wiki-layout">
+<aside class="wiki-sidebar">
+  <div class="wiki-logo">SWX 百科<span>综合知识库</span></div>
+  <nav class="wiki-nav">
+    <a href="index.html">首页</a>
+    <a href="bna.html">BNA 生命体系</a>
+    <a href="tech.html" class="active">科技与装备</a>
+    <a href="world.html">世界观与地理</a>
+    <a href="characters.html">人物与叙事</a>
+    <a href="language.html">胡尔科夫语</a>
+  </nav>
+</aside>
+
+<main class="wiki-main">
+<h1 class="wiki-title">科技与装备</h1>
+<p class="wiki-subtitle">状态机 · Ch 元素 · 推进系统 · 武器装备</p>
+
+<div class="wiki-section" id="statemachine">
+  <h2>状态机技术 (State Machine)</h2>
+  <p>状态机是 SWX 文明的终极医疗技术体系，核心为植入胸腔的电子应答器 (Transponder)。应答器每 10-35 分钟发出一次生物电审讯信号（使用者感受为刺痛或麻刺），评估全身健康状态。由 Nathaniel Solst 于 1900 年前后发明基础原型。</p>
+
+  <h3 id="oldtsolst">OLDT / SOLST — 生命维持应答器</h3>
+  <p>第一代实用化应答器。保护大脑，将意识转移至机械身体。由坝斯（Baas）于 1892 年提出概念，Nathan Solst 实现。现受 NFSEP-2074 协议严格限制，仅允许用于绝对保命场景。</p>
+
+  <h3 id="newt">NEWT — 网络化健康应答器</h3>
+  <p>由马克西姆·NB·考伦多于 2060 年前后发明。通过 SUNP 全网诊断 AI 和空间效应器，实现纳米级分子修复。使用者通过生物电审讯信号（每 10-35 分钟）与 SUNP 云端神殿保持同步。NEWT 必须接入监控网络。意识上传和情感放大器禁止民用。</p>
+  <p>写入程序 (Codicil Protocol / "终局 Final"): 离线超过 180 秒且处于濒死状态时，SUNP 自动触发神经突触固化，强制执行最后备份的意识数据写入。</p>
+
+  <h3>SAT — 军用自治应答器</h3>
+  <p>独立诊断和修复能力，不依赖 SUNP 网络。配备 CR 意识环。前身非法版本 NEWT-d 被 SMUA 和 USG 严格禁止。受 NFSEP 军备规定监控。</p>
+
+  <h3 id="sunp">SUNP — 全网诊断协议</h3>
+  <p>State machine Universal Net Protocol。云端神殿（核心服务器集群）承载全球诊断 AI。核心-边缘架构：超级计算集群统一运算，个体 NEWT 单元执行本地修复。Omega 演习证明 SUNP 存在单点故障 (SPOF) 脆弱性。</p>
+  <p><span class="wiki-tag">空间效应器</span> 将任何物质分解为分子云作为修复材料。</p>
+</div>
+
+<div class="wiki-section" id="ch">
+  <h2>Ch 元素 (Chronium / Charmlium)</h2>
+  <table class="wiki-table">
+    <tr><th>属性</th><th>值</th></tr>
+    <tr><td>原子序数</td><td>128</td></tr>
+    <tr><td>原子量</td><td>312.5 g/mol</td></tr>
+    <tr><td>密度</td><td>28.6 g/cm³</td></tr>
+    <tr><td>莫氏硬度</td><td>12.5</td></tr>
+    <tr><td>熔点</td><td>5400 K</td></tr>
+    <tr><td>晶格结构</td><td>BCC (Im-3m 空间群)</td></tr>
+    <tr><td>半衰期</td><td>1.5×10⁴⁴ 秒 (α 衰变)</td></tr>
+    <tr><td>形成条件</td><td>4C + ⁵⁶Fe → Ch + 3γ (25GPa, 2500K)</td></tr>
+  </table>
+
+  <h3>Ch-42 同位素</h3>
+  <p>触发低速链式反应，提供巨大的可控能量输出。每克 Ch-42 的理论能量密度为 HSG 标准的 3.8 倍。</p>
+  <h3>C-Ch (碳化 Chronium)</h3>
+  <p>Ch 与碳的高温化合物。CCS-A 舰船装甲的主力材料。HNB 导航球由 C-Ch 单晶制成。</p>
+  <h3>Ch-Si 化合物</h3>
+  <p>MIPE 引擎核心的半导体材料。通入电流释放 Ch 离子，实现能量放大倍率达 142%（超级法拉第效率）。</p>
+</div>
+
+<div class="wiki-section" id="hp">
+  <h2>HP — 超等离子体 (Hyper Plasma)</h2>
+  <p>"星魄"— 金色流动人工物质，已知最高能量密度的能量载体。天然趋向高时空曲率区域流动。HPF 武器利用此特性进行精确制导。</p>
+  <h3>HPG</h3>
+  <p>超等离子体发生器。从小型便携 HPG-.2 到行星级固定 HPG-9000，通过林-赫尔曼过程以约 66% 效率从 HP 碰撞中生产反物质。HPG 核心输出功率：7.2 TW（效率 85%）。</p>
+  <h3>HP 武器</h3>
+  <p><span class="wiki-tag">HPF "新星"</span> HP 裂变炸弹 &nbsp;
+  <span class="wiki-tag">HPI "幽灵"</span> HP 注入炸弹（趋向超曲率，破坏超光速引擎）&nbsp;
+  <span class="wiki-tag">HPC "审判"</span> HP 定向能束射炮</p>
+</div>
+
+<div class="wiki-section" id="propulsion">
+  <h2>推进系统</h2>
+  <table class="wiki-table">
+    <tr><th>引擎</th><th>类型</th><th>特点</th></tr>
+    <tr><td>CFDPE "锻锤"</td><td>活塞聚变爆轰</td><td>早期引擎，现在用于 C1 经典拉力赛</td></tr>
+    <tr><td>MIPE "弧光引擎"</td><td>Ch-Si 金属离子推进</td><td>高比冲，低推力</td></tr>
+    <tr><td>WFD / HyperDrive "曲奇罐"</td><td>翘曲场</td><td>基础 FTL，创建稳定翘曲泡</td></tr>
+    <tr><td>IE "锤击引擎"</td><td>HP 引力波脉冲</td><td>脉冲-滑翔模式，高加速</td></tr>
+    <tr><td>STePS / RIFTdrive</td><td>空间撕裂 FTL</td><td>HNB 引导，无痕跳跃。单次 = VOIDskip</td></tr>
+    <tr><td>PBS 激流引擎</td><td>HPG 亚光速</td><td>Ch-Si 等离子爆发推进</td></tr>
+  </table>
+</div>
+
+<div class="wiki-section" id="defense">
+  <h2>武器与防御</h2>
+  <h3>动能武器</h3>
+  <p><span class="wiki-tag">KEP</span> 标准动能弹 &nbsp; <span class="wiki-tag">C-KEP "铜头"</span> 抗磁盾弹 &nbsp; <span class="wiki-tag">AMC-KEP "磁头"</span> 磁消+末端机动 &nbsp; <span class="wiki-tag">TSE-KEP "硬铝弹"</span> 完全磁免疫</p>
+  <h3>防御体系</h3>
+  <p><span class="wiki-tag">CCS-A</span> C-Ch 装甲 &nbsp; <span class="wiki-tag">MRA</span> 磁反应装甲 &nbsp; <span class="wiki-tag">SCA "海绵甲"</span> 多层磁流-等离子复合材料 &nbsp; <span class="wiki-tag">CRF</span> 曲率折射场/偏转盾 &nbsp; <span class="wiki-tag">SFS</span> 停滞盾（时间膨胀防御场，几乎完美但极高能耗）&nbsp; <span class="wiki-tag">SIS "静止茧"</span> 乘员惯性阻尼（时间膨胀）</p>
+</div>
+
+<div class="wiki-note">
+  本章所涉 C.E.F. 技术细节来自 C.E.F. 军事档案部特别处理科。部分条目为 Omega-5 机密。
+</div>
+
+<div class="wiki-footer">SWX 百科 — 由 BCMA 档案馆维护</div>
+</main>
+</div>
+</body>
+</html>
