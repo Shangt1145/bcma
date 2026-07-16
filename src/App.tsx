@@ -36,6 +36,7 @@ function AppRoutes() {
         <Route path="personnel" element={<Personnel />} />
         <Route path="assets" element={<AssetManagement />} />
         <Route path="wiki" element={<Wiki />} />
+        <Route path="wiki" element={<Wiki />} />
       </Route>
       <Route path="*" element={<Ledger />} />
     </Routes>

@@ -35,6 +35,7 @@ function Console() {
           <NavLink to="/console/terminal" className="nav-link">终端</NavLink>
           <NavLink to="/console/archives" className="nav-link">档案库</NavLink>
           <NavLink to="/console/email" className="nav-link">通讯监控</NavLink>
+          <NavLink to="/console/wiki" className="nav-link">知识库</NavLink>
           <NavLink to="/console/wiki" className="nav-link">技术档案库</NavLink>
           <div className="nav-sep" />
 
