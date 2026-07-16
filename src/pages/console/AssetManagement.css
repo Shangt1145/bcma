@@ -1,0 +1,81 @@
+.asset {
+  max-width: 900px;
+}
+
+.asset-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.asset-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e6edf3;
+}
+
+.asset-count {
+  font-size: 10px;
+  color: #484f58;
+  font-family: 'Courier New', monospace;
+}
+
+.asset-denied {
+  color: #f0883e;
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  padding: 24px;
+  background: rgba(240, 136, 62, 0.05);
+  border: 1px solid rgba(240, 136, 62, 0.2);
+  border-radius: 4px;
+}
+
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-family: 'Courier New', 'SimSun', monospace;
+}
+
+.asset-table th {
+  background: #0d1117;
+  color: #8b949e;
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #21262d;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.asset-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #21262d;
+  color: #c9d1d9;
+}
+
+.asset-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.row-warn td {
+  background: rgba(240, 136, 62, 0.06);
+}
+
+.cell-id {
+  color: #58a6ff;
+  font-weight: 700;
+}
+
+.cell-note {
+  color: #484f58;
+  font-size: 10px;
+  max-width: 220px;
+}
+
+.status-ok { color: #3fb950; }
+.status-warn { color: #f0883e; font-weight: 700; }
+.status-dim { color: #30363d; }

@@ -36,8 +36,17 @@ function Console() {
           <NavLink to="/console/archives" className="nav-link">档案库</NavLink>
           <NavLink to="/console/email" className="nav-link">通讯监控</NavLink>
           <div className="nav-sep" />
-          <div className="nav-link disabled">人员管理</div>
-          <div className="nav-link disabled">资产管理</div>
+
+          {user && user.level >= 4 ? (
+            <NavLink to="/console/personnel" className="nav-link">人员管理</NavLink>
+          ) : (
+            <div className="nav-link disabled" onClick={() => setShowLogin(true)}>人员管理 🔒</div>
+          )}
+          {user && user.level >= 4 ? (
+            <NavLink to="/console/assets" className="nav-link">资产管理</NavLink>
+          ) : (
+            <div className="nav-link disabled" onClick={() => setShowLogin(true)}>资产管理 🔒</div>
+          )}
         </nav>
 
         <main className="portal-main">

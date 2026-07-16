@@ -96,6 +96,16 @@ const reports: Report[] = [
       '此事已被标记为最高安全优先级。所有相关人员请等待进一步指示。',
     ],
   },
+  {
+    id: 'CN-711',
+    title: '████████████████',
+    date: '—',
+    author: '—',
+    clearance: 0,
+    content: [
+      'aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTAwMDAwMDAwMDAw',
+    ],
+  },
 ]
 
 function Archives() {
