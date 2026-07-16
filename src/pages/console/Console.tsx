@@ -36,12 +36,6 @@ function Console() {
           <NavLink to="/console/archives" className="nav-link">档案库</NavLink>
           <NavLink to="/console/email" className="nav-link">通讯监控</NavLink>
           <div className="nav-sep" />
-
-          {user && user.level >= 2 ? (
-            <NavLink to="/console/communications" className="nav-link">通讯中心</NavLink>
-          ) : (
-            <div className="nav-link disabled" onClick={() => setShowLogin(true)}>通讯中心 🔒</div>
-          )}
           <div className="nav-link disabled">人员管理</div>
           <div className="nav-link disabled">资产管理</div>
         </nav>

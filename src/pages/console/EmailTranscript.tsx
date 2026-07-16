@@ -5,7 +5,7 @@ function EmailTranscript() {
     <div className="email-page">
       <div className="email-header">
         <h2 className="email-title">外部通讯监控记录</h2>
-        <div className="email-meta">归档编号: ECM-0074-0075 · 归档日期: 2024/06/13 · 来源: 截获</div>
+        <div className="email-meta">归档编号: ECM-0074-0075-0098 · 归档日期: 2026/07/11 · 来源: 截获</div>
       </div>
 
       <div className="email-thread">
@@ -79,6 +79,41 @@ function EmailTranscript() {
             <p>我检查过你说的那个信号频段。你是对的。而且不止你一个人注意到了——林博士昨天在回声中心内部通讯里提了同一件事，但措辞非常模糊。她似乎在规避什么。</p>
             <p>如果你想继续聊这件事，就用这个地址。我暂时不想在内网里讨论。</p>
             <p className="email-sign">— ███</p>
+          </div>
+        </div>
+
+        <div className="email-msg">
+          <div className="email-msg-header">
+            <div className="email-field">
+              <span className="email-label">发件人:</span>
+              <span className="email-value">卢克</span>
+            </div>
+            <div className="email-field">
+              <span className="email-label">收件人:</span>
+              <span className="email-value">林██ · 回声分析中心</span>
+            </div>
+            <div className="email-field">
+              <span className="email-label">通过:</span>
+              <span className="email-value">bcma-ops@outlook.com</span>
+            </div>
+            <div className="email-field">
+              <span className="email-label">主题:</span>
+              <span className="email-value">档案库里的加密数据</span>
+            </div>
+            <div className="email-field">
+              <span className="email-label">日期:</span>
+              <span className="email-value">2026年7月10日 03:41</span>
+            </div>
+          </div>
+          <div className="email-body">
+            <p>林博士：</p>
+            <p>我在系统档案库做例行回溯的时候撞上了一串数据。不是正常的档案——编号被抹掉了，创建时间戳根本就不存在，像是被人从记录链里直接剪掉然后又塞回来的。</p>
+            <p>内容是一大段编码。我试了所有标准解密流程，全都不对。不是 AES、不是 Base64 变体、不是我们内部用的任何格式。</p>
+            <p>这不是我们这边的加密方式，林博士。这是另一边的。</p>
+            <p>我把那份档案的入口重新嵌回了档案库索引里。如果你在系统里偶然翻到它——试试看。也许你知道怎么解开。</p>
+            <p>如果破解出来了，发给我。<strong>bcma-ops@outlook.com</strong>。</p>
+            <p>别在回复里发结果。用邮件。</p>
+            <p className="email-sign">— 卢克</p>
           </div>
         </div>
 
